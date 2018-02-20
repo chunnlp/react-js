@@ -32,6 +32,7 @@ ol, ul {
     text-align: center;
     width: 100px;
     border-radius: 15px;
+    transition: all, 0.6s;
 }
 
 .square:focus {
@@ -71,6 +72,7 @@ ol, ul {
     background-color: LightSeaGreen;
     font-size: 18px;
     margin-top: 5px;
+    cursor: pointer;
 }
 
 .move:hover, .move:focus {
