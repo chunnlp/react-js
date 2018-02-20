@@ -31,6 +31,7 @@ ol, ul {
     padding: 0;
     text-align: center;
     width: 100px;
+    border-radius: 15px;
 }
 
 .square:focus {
@@ -48,10 +49,31 @@ ol, ul {
 }
 
 .game {
+    width: 600px;
+    margin: 20px auto;
     display: flex;
     flex-direction: row;
 }
 
 .game-info {
     margin-left: 20px;
+}
+
+.move {
+    border-radius: 10px;
+    outline: none;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    color: white;
+    line-height: 40px;
+    border: none;
+    background-color: LightSeaGreen;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.move:hover, .move:focus {
+    font-weight: 600;
+    background-color: SteelBlue;
 }
