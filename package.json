@@ -2,7 +2,7 @@
   "name": "bookworm-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://chunnlp.github.io",
+  "homepage": "https://chunnlp.github.io/react-js",
   "dependencies": {
     "gh-pages": "^1.1.0",
     "prop-types": "^15.6.0",
