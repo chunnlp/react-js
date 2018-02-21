@@ -79,3 +79,7 @@ ol, ul {
     font-weight: 600;
     background-color: SteelBlue;
 }
+
+.win {
+    background-color: yellow;
+}
