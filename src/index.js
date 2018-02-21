@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 function Square(props) {
-    let className = 'square ' + props.pattern;
+    const className = props.hasEnded ? 'square ' + props.pattern : 'notEnd square ' + props.pattern;
+    
     return (
         <button className={className} onClick={props.onClick}>
             {props.value}
@@ -15,6 +16,7 @@ class Board extends React.Component {
     renderSquare(i) {
         return (
             <Square
+                hasEnded={this.props.pattern ? true : false}
                 pattern={this.props.pattern && this.props.pattern.indexOf(i) !== -1 ? 'win' : ''}
                 value={this.props.squares[i]}
                 onClick={() => this.props.onClick(i)}
@@ -90,7 +92,7 @@ class Game extends React.Component {
     render() {
         const history = this.state.history;
         const current = history[this.state.stepNumber];
-        const winner = calculateWinner(current.squares);
+        const winningPath = calculateWinner(current.squares);
         
         console.log(this.state.moves);
         
@@ -113,7 +115,7 @@ class Game extends React.Component {
         
         let status;
         
-        if (winner) {
+        if (winningPath) {
             status = 'Winner: ' + (this.state.xIsNext ? 'O' : 'X');
         } else {
             if (this.state.moves.length === 9) {
@@ -127,7 +129,7 @@ class Game extends React.Component {
             <div className='game'>
                 <div className='game-board'>
                     <Board
-                        pattern={winner}
+                        pattern={winningPath}
                         squares={current.squares}
                         onClick={(i) => this.handleClick(i)}
                     />

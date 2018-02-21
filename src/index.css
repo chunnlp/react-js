@@ -39,10 +39,9 @@ ol, ul {
     outline: none;
 }
 
-.square:hover {
-    background: steelblue;
+.notEnd:hover {
+    background: AntiqueWhite;
     cursor: pointer;
-    color: white;
 }
 
 .kbd-navigation .square:focus {
@@ -81,5 +80,5 @@ ol, ul {
 }
 
 .win {
-    background-color: yellow;
+    background-color: DarkSalmon;
 }
