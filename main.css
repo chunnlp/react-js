@@ -1,0 +1,38 @@
+.ui.fixed.inverted.menu {
+	/*padding: 0px;*/
+}
+
+a.header.item {
+	font-size: 1.4em;
+	letter-spacing: 2px;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: #f7f7f7;
+}
+
+.main {
+	padding-top: 80px;
+}
+
+.ui.segment.footer {
+	margin-top: 50px;
+	padding: 20px 0;
+}
+
+.side-bar.ui.card {
+	width: 100%;
+}
+
+.tag-list a {
+	margin: 2px 2px !important;
+	padding: 5px !important;
+	color: #fdfdfd !important;
+	background-color: steelblue;
+	border-radius: 15px;
+}
+
+.category {
+	padding-left: 20px !important;
+}
